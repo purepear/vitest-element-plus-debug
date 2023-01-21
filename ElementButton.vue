@@ -1,4 +1,5 @@
 <script setup>
+import { ElButton } from 'element-plus'
 defineProps({ text: String })
 </script>
 
