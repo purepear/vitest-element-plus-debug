@@ -1,4 +1,5 @@
 import vue from '@vitejs/plugin-vue'
+import { resolve } from 'path'
 
 export default {
   resolve: {
@@ -12,8 +13,15 @@ export default {
   test: {
     globals: true,
     environment: 'jsdom',
-    deps: {
-      inline: ['element-plus'],
-    },
+    alias: [
+      {
+        find: /^element-plus$/,
+        replacement: resolve(
+          __dirname,
+          'node_modules',
+          'element-plus/dist/index.full.mjs'
+        ),
+      },
+    ],
   },
 }
