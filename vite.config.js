@@ -12,7 +12,6 @@ export default {
   ],
   test: {
     globals: true,
-    environment: 'jsdom',
     alias: [
       {
         find: /^element-plus$/,
