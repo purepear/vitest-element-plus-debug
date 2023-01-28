@@ -12,6 +12,8 @@ export default {
   ],
   test: {
     globals: true,
+    maxThreads: process.env.CI ? 2 : undefined,
+    minThreads: process.env.CI ? 2 : undefined,
     alias: [
       {
         find: /^element-plus$/,
