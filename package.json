@@ -9,7 +9,8 @@
     "vitest-calc": "vitest run calc",
     "jest-native": "jest NativeButton",
     "jest-element": "jest ElementButton",
-    "jest-calc": "jest calc"
+    "jest-calc": "jest calc",
+    "cpu-count": "node ./physicalCpuCount.mjs"
   },
   "author": "",
   "license": "ISC",
